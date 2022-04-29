@@ -1,9 +1,9 @@
-(pcb C:\Users\Yannik\Documents\Kniffel_V1\Kniffel_V1.dsn
+(pcb C:\Users\yanni\Documents\Kniffel\Kniffel_V1\Kniffel_V1.dsn
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
     (host_cad "KiCad's Pcbnew")
-    (host_version "(6.0.4)")
+    (host_version "(6.0.2)")
   )
   (resolution um 10)
   (unit um)
@@ -142,7 +142,7 @@
       (place R26 50800.000000 -116840.000000 front 90.000000 (PN 120R))
     )
     (component "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm::3"
-      (place J11 60960.000000 -121920.000000 front 0.000000 (PN DICE1))
+      (place J11 66040.000000 -121920.000000 back 0.000000 (PN DICE1))
     )
     (component "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal::4"
       (place D10 134620.000000 -157480.000000 front 0.000000 (PN 1N5817))
@@ -273,10 +273,10 @@
       (place R49 175260.000000 -116840.000000 front 90.000000 (PN 120R))
     )
     (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::41
-      (place R12 154940.000000 -134620.000000 front 0.000000 (PN 3K3R))
+      (place R12 169580.000000 -136000.000000 front 180.000000 (PN 3K3R))
     )
     (component "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm::5"
-      (place J14 162560.000000 -129540.000000 front 0.000000 (PN DICE4))
+      (place J14 167800.000000 -129540.000000 back 0.000000 (PN DICE4))
     )
     (component "Package_DIP:DIP-18_W7.62mm_LongPads::3"
       (place U18 143495.000000 -121930.000000 front 0.000000 (PN ULN2803A))
@@ -300,7 +300,7 @@
       (place IC7 213360.000000 -182880.000000 front 90.000000 (PN CD4027BE))
     )
     (component "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm::6"
-      (place J12 60960.000000 -129540.000000 front 0.000000 (PN DICE2))
+      (place J12 66040.000000 -129540.000000 back 0.000000 (PN DICE2))
     )
     (component "Converter_DCDC:Converter_DCDC_RECOM_R-78HB-0.5_THT"
       (place U1 276860.000000 -157480.000000 front 0.000000 (PN "R-78HB5.0-0.5"))
@@ -327,7 +327,7 @@
       (place D2 30480.000000 -149860.000000 front 0.000000 (PN 1N5817))
     )
     (component "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm::8"
-      (place J15 266700.000000 -134620.000000 front 90.000000 (PN DICE5))
+      (place J15 266700.000000 -134620.000000 back 270.000000 (PN DICE5))
     )
     (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::46
       (place R5 53340.000000 -149860.000000 front -90.000000 (PN 3K3R))
@@ -426,7 +426,7 @@
       (place U9 144780.000000 -170180.000000 front 90.000000 (PN CD4029BE))
     )
     (component "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm::12"
-      (place J13 163040.000000 -121920.000000 front 0.000000 (PN DICE3))
+      (place J13 167386.000000 -122301.000000 back 0.000000 (PN DICE3))
     )
     (component "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal::17"
       (place D17 114300.000000 -177800.000000 front 0.000000 (PN 1N5817))
@@ -4897,6 +4897,15 @@
       )
       (rule
         (width 250)
+        (clearance 200.1)
+      )
+    )
+    (class Power +10V +5V
+      (circuit
+        (use_via Via[0-1]_800:400_um)
+      )
+      (rule
+        (width 500)
         (clearance 200.1)
       )
     )

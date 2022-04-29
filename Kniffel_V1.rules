@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 353)
+    (start_pass_no 6055)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -41,10 +41,16 @@
     (attach off)
   )
   (via 
+    "Via[0-1]_800:400_um-Power" "Via[0-1]_800:400_um" Power
+  )
+  (via 
     "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
   )
   (via 
     "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    Power "Via[0-1]_800:400_um-Power"
   )
   (via_rule
     default "Via[0-1]_800:400_um"
@@ -53,35 +59,34 @@
     "kicad_default" "Via[0-1]_800:400_um-kicad_default"
   )
   (class default
-    "Net-(C1-Pad1)" GND "Net-(D1-Pad2)" "Net-(D2-Pad1)" "Net-(D2-Pad2)" "Net-(D3-Pad2)" "Net-(D4-Pad2)" /Dice1/D2
-    "Net-(D5-Pad2)" "Net-(D6-Pad2)" "Net-(D7-Pad2)" /Dice1/D3 "Net-(D8-Pad2)" "Net-(D9-Pad2)" "Net-(D10-Pad2)" /Dice1/D4
-    "Net-(D11-Pad2)" "Net-(D12-Pad2)" "Net-(D13-Pad2)" "Net-(D14-Pad1)" "Net-(D14-Pad2)" "Net-(D15-Pad2)" "Net-(D16-Pad2)" "Net-(DS1-Pad1)"
-    "Net-(DS1-Pad2)" "Net-(DS1-Pad4)" "Net-(DS1-Pad5)" "Net-(DS1-Pad6)" "Net-(DS1-Pad7)" "Net-(DS1-Pad9)" "Net-(DS1-Pad10)" "Net-(DS2-Pad1)"
-    "Net-(DS2-Pad2)" "Net-(DS2-Pad4)" /Dice1/D2Q "Net-(DS2-Pad6)" "Net-(DS2-Pad7)" "Net-(DS2-Pad9)" "Net-(DS2-Pad10)" "Net-(DS3-Pad1)"
-    "Net-(DS3-Pad2)" "Net-(DS3-Pad4)" "Net-(DS3-Pad5)" "Net-(DS3-Pad6)" "Net-(DS3-Pad7)" "Net-(DS3-Pad9)" "Net-(DS3-Pad10)" "Net-(DS4-Pad1)"
-    "Net-(DS4-Pad2)" "Net-(DS4-Pad4)" /Dice3/D4Q "Net-(DS4-Pad6)" "Net-(DS4-Pad7)" "Net-(DS4-Pad9)" "Net-(DS4-Pad10)" "Net-(DS5-Pad1)"
-    "Net-(DS5-Pad2)" "Net-(DS5-Pad4)" "Net-(DS5-Pad5)" "Net-(DS5-Pad6)" "Net-(DS5-Pad7)" "Net-(DS5-Pad9)" "Net-(DS5-Pad10)" "Net-(C2-Pad1)"
-    +5V "Net-(J3-Pad1)" /Dice1/Roll "Net-(IC1-Pad3)" "Net-(R3-Pad2)" "Net-(C4-Pad1)" /Dice1/D2Set "Net-(R8-Pad2)"
-    "Net-(C6-Pad1)" "Net-(IC4-Pad3)" "Net-(R13-Pad2)" "Net-(C8-Pad1)" /Dice3/D4Set "Net-(R18-Pad2)" "Net-(C10-Pad1)" "Net-(R23-Pad2)"
-    "Net-(C12-Pad1)" "Net-(U2-Pad3)" "Net-(C3-Pad1)" "Net-(IC1-Pad2)" "Net-(IC2-Pad5)" /Dice1/D2Latch /Dice1/D2Hold /Dice1/D3Hold
-    /Dice1/D3Latch /Dice1/D4Latch /Dice1/D4Hold "Net-(U3-Pad1)" /Dice1/D2R /Dice1/D3R /Dice1/D4R "Net-(U6-Pad3)"
-    "Net-(C5-Pad1)" "Net-(U8-Pad3)" "Net-(C7-Pad1)" "Net-(U10-Pad3)" "Net-(C9-Pad1)" "Net-(U12-Pad3)" "Net-(C11-Pad1)" "Net-(U13-Pad1)"
-    D5Latch D5Hold "unconnected-(U14-Pad8)" "unconnected-(U14-Pad9)" "unconnected-(U14-Pad10)" "unconnected-(U14-Pad11)" "unconnected-(U14-Pad12)" "unconnected-(U14-Pad13)"
-    "unconnected-(IC7-Pad15)" "unconnected-(IC7-Pad14)" "D5 Latch" "unconnected-(U3-Pad7)" "unconnected-(U3-Pad2)" "unconnected-(U7-Pad7)" "unconnected-(U7-Pad2)" "unconnected-(U9-Pad7)"
-    "unconnected-(U9-Pad2)" "unconnected-(U11-Pad7)" "unconnected-(U11-Pad2)" "unconnected-(U13-Pad7)" "unconnected-(U13-Pad2)" "Net-(D17-Pad1)" "Net-(D17-Pad2)" "Net-(D18-Pad2)"
-    Reset "unconnected-(U15-Pad1)" "unconnected-(U15-Pad5)" "unconnected-(U15-Pad6)" "unconnected-(U15-Pad7)" "unconnected-(U15-Pad9)" "unconnected-(U15-Pad10)" "unconnected-(U15-Pad11)"
-    "unconnected-(U15-Pad12)" +10V "Net-(DS2-Pad5)" "Net-(DS4-Pad5)" "Net-(IC1-Pad1)" "Net-(IC2-Pad15)" "Net-(IC2-Pad14)" "Net-(IC2-Pad13)"
-    "Net-(IC2-Pad12)" "Net-(IC2-Pad11)" "Net-(IC2-Pad10)" "Net-(IC2-Pad9)" "Net-(IC3-Pad15)" "Net-(IC3-Pad14)" "Net-(IC3-Pad13)" "Net-(IC3-Pad12)"
-    "Net-(IC3-Pad11)" "Net-(IC3-Pad10)" "Net-(IC3-Pad9)" "Net-(IC4-Pad1)" "Net-(IC5-Pad15)" "Net-(IC5-Pad14)" "Net-(IC5-Pad13)" "Net-(IC5-Pad12)"
-    "Net-(IC5-Pad11)" "Net-(IC5-Pad10)" "Net-(IC5-Pad9)" "Net-(IC6-Pad15)" "Net-(IC6-Pad14)" "Net-(IC6-Pad13)" "Net-(IC6-Pad12)" "Net-(IC6-Pad11)"
-    "Net-(IC6-Pad10)" "Net-(IC6-Pad9)" "Net-(IC7-Pad3)" "Net-(IC7-Pad1)" "Net-(IC8-Pad15)" "Net-(IC8-Pad14)" "Net-(IC8-Pad13)" "Net-(IC8-Pad12)"
-    "Net-(IC8-Pad11)" "Net-(IC8-Pad10)" "Net-(IC8-Pad9)" "Net-(R6-Pad1)" "Net-(R11-Pad1)" "Net-(R16-Pad1)" "Net-(R21-Pad1)" "Net-(R26-Pad1)"
-    "Net-(R31-Pad1)" "Net-(R32-Pad1)" "Net-(R33-Pad1)" "Net-(R34-Pad1)" "Net-(R35-Pad1)" "Net-(R36-Pad1)" "Net-(R37-Pad1)" "Net-(R38-Pad1)"
-    "Net-(R39-Pad1)" "Net-(R40-Pad1)" "Net-(R41-Pad1)" "Net-(R42-Pad1)" "Net-(R43-Pad1)" "Net-(R44-Pad1)" "Net-(R45-Pad1)" "Net-(R46-Pad1)"
-    "Net-(R47-Pad1)" "Net-(R48-Pad1)" "Net-(R49-Pad1)" "Net-(R50-Pad1)" "Net-(R51-Pad1)" "Net-(R52-Pad1)" "Net-(R53-Pad1)" "Net-(R54-Pad1)"
-    "Net-(R55-Pad1)" "Net-(R56-Pad1)" "Net-(R57-Pad1)" "Net-(R58-Pad1)" "Net-(R59-Pad1)" "Net-(R60-Pad1)" "Net-(R61-Pad1)" "Net-(R62-Pad1)"
-    "Net-(R63-Pad1)" "Net-(R64-Pad1)" "Net-(R65-Pad1)" "unconnected-(U16-Pad10)" "unconnected-(U17-Pad10)" "unconnected-(U18-Pad10)" "unconnected-(U19-Pad10)" "unconnected-(U20-Pad10)"
-    "Net-(J7-Pad2)" "Net-(J8-Pad2)" "Net-(J9-Pad2)"
+    "Net-(C1-Pad1)" "Net-(D1-Pad2)" "Net-(D2-Pad1)" "Net-(D2-Pad2)" "Net-(D3-Pad2)" "Net-(D4-Pad2)" /Dice1/D2 "Net-(D5-Pad2)"
+    "Net-(D6-Pad2)" "Net-(D7-Pad2)" /Dice1/D3 "Net-(D8-Pad2)" "Net-(D9-Pad2)" "Net-(D10-Pad2)" /Dice1/D4 "Net-(D11-Pad2)"
+    "Net-(D12-Pad2)" "Net-(D13-Pad2)" "Net-(D14-Pad1)" "Net-(D14-Pad2)" "Net-(D15-Pad2)" "Net-(D16-Pad2)" "Net-(DS1-Pad1)" "Net-(DS1-Pad2)"
+    "Net-(DS1-Pad4)" "Net-(DS1-Pad5)" "Net-(DS1-Pad6)" "Net-(DS1-Pad7)" "Net-(DS1-Pad9)" "Net-(DS1-Pad10)" "Net-(DS2-Pad1)" "Net-(DS2-Pad2)"
+    "Net-(DS2-Pad4)" /Dice1/D2Q "Net-(DS2-Pad6)" "Net-(DS2-Pad7)" "Net-(DS2-Pad9)" "Net-(DS2-Pad10)" "Net-(DS3-Pad1)" "Net-(DS3-Pad2)"
+    "Net-(DS3-Pad4)" "Net-(DS3-Pad5)" "Net-(DS3-Pad6)" "Net-(DS3-Pad7)" "Net-(DS3-Pad9)" "Net-(DS3-Pad10)" "Net-(DS4-Pad1)" "Net-(DS4-Pad2)"
+    "Net-(DS4-Pad4)" /Dice3/D4Q "Net-(DS4-Pad6)" "Net-(DS4-Pad7)" "Net-(DS4-Pad9)" "Net-(DS4-Pad10)" "Net-(DS5-Pad1)" "Net-(DS5-Pad2)"
+    "Net-(DS5-Pad4)" "Net-(DS5-Pad5)" "Net-(DS5-Pad6)" "Net-(DS5-Pad7)" "Net-(DS5-Pad9)" "Net-(DS5-Pad10)" "Net-(C2-Pad1)" "Net-(J3-Pad1)"
+    /Dice1/Roll "Net-(IC1-Pad3)" "Net-(R3-Pad2)" "Net-(C4-Pad1)" /Dice1/D2Set "Net-(R8-Pad2)" "Net-(C6-Pad1)" "Net-(IC4-Pad3)"
+    "Net-(R13-Pad2)" "Net-(C8-Pad1)" /Dice3/D4Set "Net-(R18-Pad2)" "Net-(C10-Pad1)" "Net-(R23-Pad2)" "Net-(C12-Pad1)" "Net-(U2-Pad3)"
+    "Net-(C3-Pad1)" "Net-(IC1-Pad2)" "Net-(IC2-Pad5)" /Dice1/D2Latch /Dice1/D2Hold /Dice1/D3Hold /Dice1/D3Latch /Dice1/D4Latch
+    /Dice1/D4Hold "Net-(U3-Pad1)" /Dice1/D2R /Dice1/D3R /Dice1/D4R "Net-(U6-Pad3)" "Net-(C5-Pad1)" "Net-(U8-Pad3)"
+    "Net-(C7-Pad1)" "Net-(U10-Pad3)" "Net-(C9-Pad1)" "Net-(U12-Pad3)" "Net-(C11-Pad1)" "Net-(U13-Pad1)" D5Latch D5Hold
+    "unconnected-(U14-Pad8)" "unconnected-(U14-Pad9)" "unconnected-(U14-Pad10)" "unconnected-(U14-Pad11)" "unconnected-(U14-Pad12)" "unconnected-(U14-Pad13)" "unconnected-(IC7-Pad15)" "unconnected-(IC7-Pad14)"
+    "D5 Latch" "unconnected-(U3-Pad7)" "unconnected-(U3-Pad2)" "unconnected-(U7-Pad7)" "unconnected-(U7-Pad2)" "unconnected-(U9-Pad7)" "unconnected-(U9-Pad2)" "unconnected-(U11-Pad7)"
+    "unconnected-(U11-Pad2)" "unconnected-(U13-Pad7)" "unconnected-(U13-Pad2)" "Net-(D17-Pad1)" "Net-(D17-Pad2)" "Net-(D18-Pad2)" Reset "unconnected-(U15-Pad1)"
+    "unconnected-(U15-Pad5)" "unconnected-(U15-Pad6)" "unconnected-(U15-Pad7)" "unconnected-(U15-Pad9)" "unconnected-(U15-Pad10)" "unconnected-(U15-Pad11)" "unconnected-(U15-Pad12)" "Net-(DS2-Pad5)"
+    "Net-(DS4-Pad5)" "Net-(IC1-Pad1)" "Net-(IC2-Pad15)" "Net-(IC2-Pad14)" "Net-(IC2-Pad13)" "Net-(IC2-Pad12)" "Net-(IC2-Pad11)" "Net-(IC2-Pad10)"
+    "Net-(IC2-Pad9)" "Net-(IC3-Pad15)" "Net-(IC3-Pad14)" "Net-(IC3-Pad13)" "Net-(IC3-Pad12)" "Net-(IC3-Pad11)" "Net-(IC3-Pad10)" "Net-(IC3-Pad9)"
+    "Net-(IC4-Pad1)" "Net-(IC5-Pad15)" "Net-(IC5-Pad14)" "Net-(IC5-Pad13)" "Net-(IC5-Pad12)" "Net-(IC5-Pad11)" "Net-(IC5-Pad10)" "Net-(IC5-Pad9)"
+    "Net-(IC6-Pad15)" "Net-(IC6-Pad14)" "Net-(IC6-Pad13)" "Net-(IC6-Pad12)" "Net-(IC6-Pad11)" "Net-(IC6-Pad10)" "Net-(IC6-Pad9)" "Net-(IC7-Pad3)"
+    "Net-(IC7-Pad1)" "Net-(IC8-Pad15)" "Net-(IC8-Pad14)" "Net-(IC8-Pad13)" "Net-(IC8-Pad12)" "Net-(IC8-Pad11)" "Net-(IC8-Pad10)" "Net-(IC8-Pad9)"
+    "Net-(R6-Pad1)" "Net-(R11-Pad1)" "Net-(R16-Pad1)" "Net-(R21-Pad1)" "Net-(R26-Pad1)" "Net-(R31-Pad1)" "Net-(R32-Pad1)" "Net-(R33-Pad1)"
+    "Net-(R34-Pad1)" "Net-(R35-Pad1)" "Net-(R36-Pad1)" "Net-(R37-Pad1)" "Net-(R38-Pad1)" "Net-(R39-Pad1)" "Net-(R40-Pad1)" "Net-(R41-Pad1)"
+    "Net-(R42-Pad1)" "Net-(R43-Pad1)" "Net-(R44-Pad1)" "Net-(R45-Pad1)" "Net-(R46-Pad1)" "Net-(R47-Pad1)" "Net-(R48-Pad1)" "Net-(R49-Pad1)"
+    "Net-(R50-Pad1)" "Net-(R51-Pad1)" "Net-(R52-Pad1)" "Net-(R53-Pad1)" "Net-(R54-Pad1)" "Net-(R55-Pad1)" "Net-(R56-Pad1)" "Net-(R57-Pad1)"
+    "Net-(R58-Pad1)" "Net-(R59-Pad1)" "Net-(R60-Pad1)" "Net-(R61-Pad1)" "Net-(R62-Pad1)" "Net-(R63-Pad1)" "Net-(R64-Pad1)" "Net-(R65-Pad1)"
+    "unconnected-(U16-Pad10)" "unconnected-(U17-Pad10)" "unconnected-(U18-Pad10)" "unconnected-(U19-Pad10)" "unconnected-(U20-Pad10)" "Net-(J7-Pad2)" "Net-(J8-Pad2)" "Net-(J9-Pad2)"
     (clearance_class default)
     (via_rule default)
     (rule
@@ -96,6 +101,17 @@
     (via_rule kicad_default)
     (rule
       (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Power
+    GND +5V +10V
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 500.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
