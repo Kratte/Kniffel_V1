@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 567)
+    (start_pass_no 353)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -81,7 +81,7 @@
     "Net-(R47-Pad1)" "Net-(R48-Pad1)" "Net-(R49-Pad1)" "Net-(R50-Pad1)" "Net-(R51-Pad1)" "Net-(R52-Pad1)" "Net-(R53-Pad1)" "Net-(R54-Pad1)"
     "Net-(R55-Pad1)" "Net-(R56-Pad1)" "Net-(R57-Pad1)" "Net-(R58-Pad1)" "Net-(R59-Pad1)" "Net-(R60-Pad1)" "Net-(R61-Pad1)" "Net-(R62-Pad1)"
     "Net-(R63-Pad1)" "Net-(R64-Pad1)" "Net-(R65-Pad1)" "unconnected-(U16-Pad10)" "unconnected-(U17-Pad10)" "unconnected-(U18-Pad10)" "unconnected-(U19-Pad10)" "unconnected-(U20-Pad10)"
-    "Net-(R28-Pad1)" "Net-(R29-Pad1)" "Net-(R30-Pad1)"
+    "Net-(J7-Pad2)" "Net-(J8-Pad2)" "Net-(J9-Pad2)"
     (clearance_class default)
     (via_rule default)
     (rule
