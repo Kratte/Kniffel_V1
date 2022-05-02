@@ -8164,7 +8164,7 @@
   (gr_text "Maurizio Kerrutt" (at 111.5 135.666666) (layer "F.SilkS") (tstamp aa773ecc-7c29-4158-a470-6d9097bc1f3b)
     (effects (font (size 1 1) (thickness 0.15)) (justify left))
   )
-  (gr_text "Nico Brike" (at 111.5 134) (layer "F.SilkS") (tstamp dc60d558-9e55-4964-b86b-22adf4614a68)
+  (gr_text "Nico Birke" (at 111.5 134) (layer "F.SilkS") (tstamp dc60d558-9e55-4964-b86b-22adf4614a68)
     (effects (font (size 1 1) (thickness 0.15)) (justify left))
   )
 
